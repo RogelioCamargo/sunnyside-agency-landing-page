@@ -1,0 +1,52 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+img {
+  width: 100%;
+}
+
+body {
+  font-size: 1.8rem;
+}
+
+.main-header {
+  height: 53.8rem;
+  background-image: url("./images/mobile/image-header.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.main-header__wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 3.2rem 2.4rem;
+}
+
+.brand {
+  height: 2.4rem;
+  width: 12.5rem;
+}
+
+.icon {
+  height: 2rem;
+  width: 2rem;
+}
+
+.hamburger-icon {
+  width: 2.4rem;
+  height: 1.8rem;
+}
+
+.main-header__nav {
+	display: none;
+}
