@@ -1,3 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap");
+
+:root {
+  --barlow-font: "Barlow", sans-serif;
+  --fraunces-font: "Fraunces", serif;
+  --white: hsl(0, 0%, 100%);
+}
 *,
 *::before,
 *::after {
@@ -16,9 +23,13 @@ img {
 
 body {
   font-size: 1.8rem;
+  font-family: var(--barlow-font);
 }
 
+/* Main Header */
+
 .main-header {
+	position: relative;
   height: 53.8rem;
   background-image: url("./images/mobile/image-header.jpg");
   background-size: cover;
@@ -26,10 +37,10 @@ body {
 }
 
 .main-header__wrapper {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	padding: 3.2rem 2.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3.2rem 2.4rem;
 }
 
 .brand {
@@ -48,5 +59,29 @@ body {
 }
 
 .main-header__nav {
-	display: none;
+  display: none;
+}
+
+.main-header h1 {
+  position: absolute;
+  left: 50%;
+	transform: translateX(-50%);
+  top: 14.4rem;
+  font-family: var(--fraunces-font);
+  font-size: 4rem;
+  font-weight: 900;
+  line-height: 4.9rem;
+  color: var(--white);
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.625rem;
+}
+
+.arrow-icon {
+	height: 10.8rem;
+	width: 3rem;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	top: 29.4rem;
 }
