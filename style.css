@@ -7,6 +7,7 @@
   --dark-blue: #24303e;
   --dark-gray-blue: #808397;
   --yellow: #fad400;
+	--cyan: #24554A;
 }
 *,
 *::before,
@@ -142,4 +143,38 @@ body {
 	left: 50%;
 	transform: translateX(-50%);
 	border-radius: 2.8rem;
+}
+
+/* Services */
+
+.service {
+	height: 60rem;
+	padding: 40rem 2.4rem 0;
+	text-align: center;
+	color: var(--cyan);
+}
+
+.service--design {
+	background-image: url("./images/mobile/image-graphic-design.jpg");
+	background-size: cover;
+}
+
+.service--photography {
+	background-image: url("./images/mobile/image-photography.jpg");
+	background-size: cover;
+}
+
+.service h3 {
+	/* margin-top: 3rem; */
+	font-family: var(--fraunces-font);
+	font-size: 2.8rem;
+	line-height: 3.5rem;
+	font-weight: 900;
+	margin-bottom: 2.7rem;
+}
+
+.service p {
+	font-size: 1.6rem;
+	line-height: 2.7rem;
+	font-weight: 600;
 }
