@@ -3,7 +3,10 @@
 :root {
   --barlow-font: "Barlow", sans-serif;
   --fraunces-font: "Fraunces", serif;
-  --white: hsl(0, 0%, 100%);
+  --white: #fff;
+  --dark-blue: #24303e;
+  --dark-gray-blue: #808397;
+  --yellow: #fad400;
 }
 *,
 *::before,
@@ -19,6 +22,7 @@ html {
 
 img {
   width: 100%;
+  display: flex;
 }
 
 body {
@@ -29,7 +33,7 @@ body {
 /* Main Header */
 
 .main-header {
-	position: relative;
+  position: relative;
   height: 53.8rem;
   background-image: url("./images/mobile/image-header.jpg");
   background-size: cover;
@@ -65,7 +69,7 @@ body {
 .main-header h1 {
   position: absolute;
   left: 50%;
-	transform: translateX(-50%);
+  transform: translateX(-50%);
   top: 14.4rem;
   font-family: var(--fraunces-font);
   font-size: 4rem;
@@ -78,10 +82,64 @@ body {
 }
 
 .arrow-icon {
-	height: 10.8rem;
-	width: 3rem;
-	position: absolute;
+  height: 10.8rem;
+  width: 3rem;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 29.4rem;
+}
+
+/* About */
+
+.about {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.about__info {
+  text-align: center;
+  padding: 6.4rem 2.4rem;
+  
+  color: var(--dark-blue);
+}
+
+.about__info h2 {
+	font-family: var(--fraunces-font);
+  line-height: 3.9rem;
+  font-size: 3.2rem;
+  margin-bottom: 2.4rem;
+  font-weight: 900;
+}
+
+.about__info p {
+  font-family: var(--barlow-font);
+  color: var(--dark-gray-blue);
+  font-weight: 600;
+  line-height: 3rem;
+  margin-bottom: 3.2rem;
+}
+
+.about__info button {
+	font-family: var(--fraunces-font);
+  position: relative;
+  text-transform: uppercase;
+  border: none;
+  font-size: 1.5rem;
+  background-color: transparent;
+  letter-spacing: 0.1rem;
+  font-weight: 900;
+}
+
+.about__info button::before {
+  content: "";
+  position: absolute;
+  width: 13.5rem;
+  height: 1rem;
+  background-color: var(--yellow);
+  opacity: 0.25;
+	bottom: -0.2rem;
 	left: 50%;
 	transform: translateX(-50%);
-	top: 29.4rem;
+	border-radius: 2.8rem;
 }
