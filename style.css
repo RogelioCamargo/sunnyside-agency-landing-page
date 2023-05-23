@@ -37,6 +37,7 @@ body {
 
 a {
   text-decoration: none;
+	display: block;
 }
 
 ul,
@@ -76,6 +77,11 @@ h4 {
   width: 32.9rem;
   margin: 0 auto;
   padding-top: 3.4rem;
+}
+
+.toggle-menu-button {
+	border: 0;
+	background-color: transparent;
 }
 
 .brand {
