@@ -12,6 +12,7 @@
   --ligher-cyan: #458d7e;
   --dark-cyan: #90d4c6;
   --gray-blue: #a7aaad;
+  --black: #000;
 }
 *,
 *::before,
@@ -32,6 +33,10 @@ img {
 body {
   font-size: 1.8rem;
   font-family: var(--barlow-font);
+}
+
+a {
+  text-decoration: none;
 }
 
 ul,
@@ -103,6 +108,61 @@ h4 {
   left: 50%;
   transform: translateX(-50%);
   top: 29.4rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .main-header {
+    height: 80rem;
+    background-image: url("./images/desktop/image-header.jpg");
+  }
+
+  .main-header__wrapper {
+    padding: 3.4rem 4rem;
+  }
+
+  .brand {
+    height: 3.3rem;
+    width: 17rem;
+  }
+
+  .hamburger-icon {
+    display: none;
+  }
+
+  .main-header h1 {
+    width: 100%;
+    top: 19.5rem;
+  }
+
+  .arrow-icon {
+    top: 36rem;
+  }
+
+  .main-header__nav {
+    display: block;
+  }
+
+  .main-header__nav ul {
+    display: flex;
+    align-items: center;
+    gap: 4.7rem;
+  }
+
+  .main-header__nav a {
+    color: var(--white);
+  }
+
+  .main-header__nav li:last-child a {
+    background-color: var(--white);
+    color: var(--black);
+		padding: 1.5rem 3rem;
+		border-radius: 2.8rem;
+		font-family: var(--fraunces-font);
+		font-size: 1.5rem;
+		line-height: 2.5rem;
+		font-weight: 700;
+		text-transform: uppercase;
+  }
 }
 
 /* About */
@@ -262,7 +322,6 @@ h4 {
 }
 
 .main-footer a {
-  text-decoration: none;
   color: var(--ligher-cyan);
   line-height: 2.5rem;
 }
