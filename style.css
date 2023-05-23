@@ -172,6 +172,10 @@ h4 {
   grid-template-columns: 1fr;
 }
 
+.about img {
+  display: block;
+}
+
 .about__info {
   text-align: center;
   padding: 6.4rem 2.4rem;
@@ -382,19 +386,23 @@ h4 {
     margin: 0 auto;
   }
 
-	.testimonials blockquote {
-		margin-top: 5.8rem;
-	}
+  .testimonials blockquote {
+    margin-top: 5.8rem;
+  }
 
-	.testimonials figcaption {
-		margin-top: 3rem;
-	}
+  .testimonials figcaption {
+    margin-top: 3rem;
+  }
 }
 
 /* Projects */
 .projects {
   display: grid;
   grid-template-columns: 1fr 1fr;
+}
+
+.projects img {
+  display: block;
 }
 
 @media only screen and (min-width: 768px) {

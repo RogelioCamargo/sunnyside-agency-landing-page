@@ -43,10 +43,16 @@
     <main>
       <!-- About -->
       <section id="about" class="about">
-        <img
-          src="./images/desktop/image-transform.jpg"
-          alt="white egg with yellow background"
-        />
+        <picture>
+          <source
+            media="(min-width:768px)"
+            srcset="./images/desktop/image-transform.jpg"
+          />
+          <img
+            src="./images/mobile/image-transform.jpg"
+            alt="white egg with yellow background"
+          />
+        </picture>
         <div class="about__info">
           <h2>Transform your brand</h2>
           <p>
@@ -56,10 +62,16 @@
           </p>
           <button>Learn more</button>
         </div>
-        <img
-          src="./images/desktop/image-stand-out.jpg"
-          alt="pink plastic cup with pink background"
-        />
+        <picture>
+          <source
+            media="(min-width:768px)"
+            srcset="./images/desktop/image-stand-out.jpg"
+          />
+          <img
+            src="./images/mobile/image-stand-out.jpg"
+            alt="pink plastic cup with pink background"
+          />
+        </picture>
         <div class="about__info">
           <h2>Stand out to the right audience</h2>
           <p>
@@ -129,22 +141,46 @@
       </section>
       <!-- Projects -->
       <section id="#projects" class="projects">
-        <img
-          src="./images/mobile/image-gallery-milkbottles.jpg"
-          alt="4 milkbottles with a sky background"
-        />
-        <img
-          src="./images/mobile/image-gallery-orange.jpg"
-          alt="Top view of orange on a bowl on a orange table"
-        />
-        <img
-          src="./images/mobile/image-gallery-cone.jpg"
-          alt="cone with a blue background"
-        />
-        <img
-          src="./images/mobile/image-gallery-sugar-cubes.jpg"
-          alt="Sugar cubes stacked with a pink background"
-        />
+        <picture>
+          <source
+            media="(min-width:768px)"
+            srcset="./images/desktop/image-gallery-milkbottles.jpg"
+          />
+          <img
+            src="./images/mobile/image-gallery-milkbottles.jpg"
+            alt="4 milkbottles with a sky background"
+          />
+        </picture>
+        <picture>
+          <source
+            media="(min-width:768px)"
+            srcset="./images/desktop/image-gallery-orange.jpg"
+          />
+          <img
+            src="./images/mobile/image-gallery-orange.jpg"
+            alt="Top view of orange on a bowl on a orange table"
+          />
+        </picture>
+        <picture>
+          <source
+            media="(min-width:768px)"
+            srcset="./images/desktop/image-gallery-cone.jpg"
+          />
+          <img
+            src="./images/mobile/image-gallery-cone.jpg"
+            alt="cone with a blue background"
+          />
+        </picture>
+        <picture>
+          <source
+            media="(min-width:768px)"
+            srcset="./images/desktop/image-gallery-sugarcubes.jpg"
+          />
+          <img
+            src="./images/mobile/image-gallery-sugar-cubes.jpg"
+            alt="Sugar cubes stacked with a pink background"
+          />
+        </picture>
       </section>
     </main>
     <footer class="main-footer">
