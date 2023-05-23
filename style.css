@@ -6,8 +6,10 @@
   --white: #fff;
   --dark-blue: #24303e;
   --dark-gray-blue: #808397;
+  --darker-gray-blue: #5b636d;
   --yellow: #fad400;
-	--cyan: #24554A;
+  --cyan: #24554a;
+  --gray-blue: #a7aaad;
 }
 *,
 *::before,
@@ -23,12 +25,18 @@ html {
 
 img {
   width: 100%;
-  display: flex;
 }
 
 body {
   font-size: 1.8rem;
   font-family: var(--barlow-font);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--fraunces-font);
 }
 
 /* Main Header */
@@ -72,7 +80,6 @@ body {
   left: 50%;
   transform: translateX(-50%);
   top: 14.4rem;
-  font-family: var(--fraunces-font);
   font-size: 4rem;
   font-weight: 900;
   line-height: 4.9rem;
@@ -101,12 +108,11 @@ body {
 .about__info {
   text-align: center;
   padding: 6.4rem 2.4rem;
-  
+
   color: var(--dark-blue);
 }
 
 .about__info h2 {
-	font-family: var(--fraunces-font);
   line-height: 3.9rem;
   font-size: 3.2rem;
   margin-bottom: 2.4rem;
@@ -122,7 +128,6 @@ body {
 }
 
 .about__info button {
-	font-family: var(--fraunces-font);
   position: relative;
   text-transform: uppercase;
   border: none;
@@ -139,42 +144,85 @@ body {
   height: 1rem;
   background-color: var(--yellow);
   opacity: 0.25;
-	bottom: -0.2rem;
-	left: 50%;
-	transform: translateX(-50%);
-	border-radius: 2.8rem;
+  bottom: -0.2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 2.8rem;
 }
 
 /* Services */
 
 .service {
-	height: 60rem;
-	padding: 40rem 2.4rem 0;
-	text-align: center;
-	color: var(--cyan);
+  height: 60rem;
+  padding: 40rem 2.4rem 0;
+  text-align: center;
+  color: var(--cyan);
 }
 
 .service--design {
-	background-image: url("./images/mobile/image-graphic-design.jpg");
-	background-size: cover;
+  background-image: url("./images/mobile/image-graphic-design.jpg");
+  background-size: cover;
 }
 
 .service--photography {
-	background-image: url("./images/mobile/image-photography.jpg");
-	background-size: cover;
+  background-image: url("./images/mobile/image-photography.jpg");
+  background-size: cover;
 }
 
 .service h3 {
-	/* margin-top: 3rem; */
-	font-family: var(--fraunces-font);
-	font-size: 2.8rem;
-	line-height: 3.5rem;
-	font-weight: 900;
-	margin-bottom: 2.7rem;
+  font-size: 2.8rem;
+  line-height: 3.5rem;
+  font-weight: 900;
+  margin-bottom: 2.7rem;
 }
 
 .service p {
-	font-size: 1.6rem;
-	line-height: 2.7rem;
-	font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 2.7rem;
+  font-weight: 600;
+}
+
+/* Testimonials */
+
+.testimonials {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 6.4rem;
+  padding: 0 2.4rem;
+  text-align: center;
+}
+
+.testimonials h4 {
+  color: var(--gray-blue);
+  letter-spacing: 0.4rem;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 6.4rem;
+}
+
+.testimonials img {
+  width: 7.2rem;
+  height: 7.2rem;
+  border-radius: 50%;
+	margin-bottom: 3.2rem;
+}
+
+.testimonials blockquote {
+  color: var(--darker-gray-blue);
+	line-height: 3.2rem;
+	margin-bottom: 3.2rem;
+}
+
+.testimonials .client-info p:first-child {
+	font-family: var(--fraunces-font);
+	line-height: 2.2rem;
+	color: var(--dark-blue);
+	font-weight: 900;
+	margin-bottom: 0.9rem;
+}
+
+.testimonials .client-info p:last-child {
+	font-size: 1.4rem;
+	line-height: 2.5rem;
+	color: var(--gray-blue);
 }
