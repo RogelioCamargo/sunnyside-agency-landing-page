@@ -155,13 +155,13 @@ h4 {
   .main-header__nav li:last-child a {
     background-color: var(--white);
     color: var(--black);
-		padding: 1.5rem 3rem;
-		border-radius: 2.8rem;
-		font-family: var(--fraunces-font);
-		font-size: 1.5rem;
-		line-height: 2.5rem;
-		font-weight: 700;
-		text-transform: uppercase;
+    padding: 1.5rem 3rem;
+    border-radius: 2.8rem;
+    font-family: var(--fraunces-font);
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
   }
 }
 
@@ -175,7 +175,6 @@ h4 {
 .about__info {
   text-align: center;
   padding: 6.4rem 2.4rem;
-
   color: var(--dark-blue);
 }
 
@@ -217,6 +216,43 @@ h4 {
   border-radius: 2.8rem;
 }
 
+@media only screen and (min-width: 768px) {
+  .about {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .about__info {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+    max-width: 44.5rem;
+    padding: 0 2.4rem;
+    height: max-content;
+  }
+
+  .about__info h2 {
+    font-size: 4rem;
+    line-height: 4.9rem;
+    margin-bottom: 3.2rem;
+  }
+
+  .about__info p {
+    margin-bottom: 4rem;
+  }
+
+  .about img:first-of-type {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
+
+  .about div:first-of-type {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+}
+
 /* Services */
 
 .service {
@@ -247,6 +283,28 @@ h4 {
   font-size: 1.6rem;
   line-height: 2.7rem;
   font-weight: 600;
+}
+
+@media only screen and (min-width: 768px) {
+  .services {
+    display: grid;
+		grid-template-columns: 1fr 1fr;
+  }
+
+  .service--design {
+    background-image: url("./images/desktop/image-graphic-design.jpg");
+		background-position: center;
+  }
+
+  .service--photography {
+    background-image: url("./images/desktop/image-photography.jpg");
+		background-position: center
+  }
+
+	.service {
+		padding-left: 10rem;
+		padding-right: 10rem;
+	}
 }
 
 /* Testimonials */
