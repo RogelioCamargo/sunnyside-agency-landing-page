@@ -9,6 +9,8 @@
   --darker-gray-blue: #5b636d;
   --yellow: #fad400;
   --cyan: #24554a;
+	--ligher-cyan: #458D7E;
+	--dark-cyan: #90D4C6;
   --gray-blue: #a7aaad;
 }
 *,
@@ -30,6 +32,10 @@ img {
 body {
   font-size: 1.8rem;
   font-family: var(--barlow-font);
+}
+
+ul, address {
+	list-style: none;
 }
 
 h1,
@@ -190,6 +196,7 @@ h4 {
 	gap: 6.4rem;
   padding: 0 2.4rem;
   text-align: center;
+	margin-bottom: 8.6rem;
 }
 
 .testimonials h4 {
@@ -225,4 +232,37 @@ h4 {
 	font-size: 1.4rem;
 	line-height: 2.5rem;
 	color: var(--gray-blue);
+}
+
+/* Footer */
+
+.main-footer {
+	background-color: var(--dark-cyan);
+	text-align: center;
+	padding: 6.4rem 2.4rem 8rem;
+}
+
+.main-footer__brand {
+	height: 3.3rem;
+	width: 17rem;
+}
+
+.main-footer nav ul {
+	display: flex;
+	gap: 5.7rem;
+	justify-content: space-evenly;
+	margin-top: 4rem;
+}
+
+.main-footer a {
+	text-decoration: none;
+	color: var(--ligher-cyan);
+	line-height: 2.5rem;
+}
+
+.main-footer address {
+	display: flex;
+	gap: 2.8rem;
+	margin-top: 8.8rem;
+	justify-content: center;
 }
