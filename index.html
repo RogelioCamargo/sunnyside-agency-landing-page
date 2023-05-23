@@ -19,6 +19,7 @@
       <div class="main-header__wrapper">
         <img class="brand" src="./images/logo.svg" alt="company logo" />
         <button class="toggle-menu-button">
+          <span class="sr-only">Toggle Menu</span>
           <img
             class="hamburger-icon"
             src="./images/icon-hamburger.svg"
@@ -26,14 +27,14 @@
           />
         </button>
         <div class="nav-mobile-container hidden">
-          <nav class="nav-mobile">
+          <div class="nav-mobile">
             <ul>
               <li><a href="#about">About</a></li>
               <li><a href="#services">Services</a></li>
               <li><a href="#projects">Projects</a></li>
               <li><a href="mailto:email@example.com">Contact</a></li>
             </ul>
-          </nav>
+          </div>
         </div>
         <nav class="main-header__nav">
           <ul>
@@ -209,26 +210,21 @@
       </nav>
       <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/address -->
       <address>
-        <li>
-          <a href="#"
-            ><img src="./images/icon-facebook.svg" alt="facebook icon"
-          /></a>
-        </li>
-        <li>
-          <a href="#"
-            ><img src="./images/icon-instagram.svg" alt="instagram icon"
-          /></a>
-        </li>
-        <li>
-          <a href="#"
-            ><img src="./images/icon-twitter.svg" alt="twitter icon"
-          /></a>
-        </li>
-        <li>
-          <a href="#"
-            ><img src="./images/icon-pinterest.svg" alt="pinterest icon"
-          /></a>
-        </li>
+        <a href="#"
+          ><img src="./images/icon-facebook.svg" alt="facebook icon"
+        /></a>
+
+        <a href="#"
+          ><img src="./images/icon-instagram.svg" alt="instagram icon"
+        /></a>
+
+        <a href="#"
+          ><img src="./images/icon-twitter.svg" alt="twitter icon"
+        /></a>
+
+        <a href="#"
+          ><img src="./images/icon-pinterest.svg" alt="pinterest icon"
+        /></a>
       </address>
     </footer>
     <script src="./script.js"></script>
