@@ -357,7 +357,7 @@ h4 {
 @media only screen and (min-width: 768px) {
   .testimonials {
     margin-top: 16rem;
-    margin-bottom: 16rem;
+    margin-bottom: 10rem;
   }
 
   .testimonials__wrapper {
@@ -375,12 +375,20 @@ h4 {
     display: grid;
     justify-self: center;
     grid-template-columns: 1fr;
-    grid-template-rows: 10rem 1fr 1fr;
+    grid-template-rows: 7.5rem 1fr 1fr;
   }
 
   .testimonials img {
     margin: 0 auto;
   }
+
+	.testimonials blockquote {
+		margin-top: 5.8rem;
+	}
+
+	.testimonials figcaption {
+		margin-top: 3rem;
+	}
 }
 
 /* Projects */
