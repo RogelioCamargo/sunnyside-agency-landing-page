@@ -37,7 +37,7 @@ body {
 
 a {
   text-decoration: none;
-	display: block;
+  display: block;
 }
 
 ul,
@@ -80,8 +80,8 @@ h4 {
 }
 
 .toggle-menu-button {
-	border: 0;
-	background-color: transparent;
+  border: 0;
+  background-color: transparent;
 }
 
 .brand {
