@@ -9,8 +9,8 @@
   --darker-gray-blue: #5b636d;
   --yellow: #fad400;
   --cyan: #24554a;
-	--ligher-cyan: #458D7E;
-	--dark-cyan: #90D4C6;
+  --ligher-cyan: #458d7e;
+  --dark-cyan: #90d4c6;
   --gray-blue: #a7aaad;
 }
 *,
@@ -34,8 +34,9 @@ body {
   font-family: var(--barlow-font);
 }
 
-ul, address {
-	list-style: none;
+ul,
+address {
+  list-style: none;
 }
 
 h1,
@@ -191,12 +192,12 @@ h4 {
 /* Testimonials */
 
 .testimonials {
-	display: grid;
-	grid-template-columns: 1fr;
-	gap: 6.4rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 6.4rem;
   padding: 0 2.4rem;
   text-align: center;
-	margin-bottom: 8.6rem;
+  margin-bottom: 8.6rem;
 }
 
 .testimonials h4 {
@@ -211,58 +212,64 @@ h4 {
   width: 7.2rem;
   height: 7.2rem;
   border-radius: 50%;
-	margin-bottom: 3.2rem;
+  margin-bottom: 3.2rem;
 }
 
 .testimonials blockquote {
   color: var(--darker-gray-blue);
-	line-height: 3.2rem;
-	margin-bottom: 3.2rem;
+  line-height: 3.2rem;
+  margin-bottom: 3.2rem;
 }
 
 .testimonials .client-info p:first-child {
-	font-family: var(--fraunces-font);
-	line-height: 2.2rem;
-	color: var(--dark-blue);
-	font-weight: 900;
-	margin-bottom: 0.9rem;
+  font-family: var(--fraunces-font);
+  line-height: 2.2rem;
+  color: var(--dark-blue);
+  font-weight: 900;
+  margin-bottom: 0.9rem;
 }
 
 .testimonials .client-info p:last-child {
-	font-size: 1.4rem;
-	line-height: 2.5rem;
-	color: var(--gray-blue);
+  font-size: 1.4rem;
+  line-height: 2.5rem;
+  color: var(--gray-blue);
+}
+
+/* Projects */
+.projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 /* Footer */
 
 .main-footer {
-	background-color: var(--dark-cyan);
-	text-align: center;
-	padding: 6.4rem 2.4rem 8rem;
+  background-color: var(--dark-cyan);
+  text-align: center;
+  padding: 6.4rem 2.4rem 8rem;
 }
 
 .main-footer__brand {
-	height: 3.3rem;
-	width: 17rem;
+  height: 3.3rem;
+  width: 17rem;
 }
 
 .main-footer nav ul {
-	display: flex;
-	gap: 5.7rem;
-	justify-content: space-evenly;
-	margin-top: 4rem;
+  display: flex;
+  gap: 5.7rem;
+  justify-content: space-evenly;
+  margin-top: 4rem;
 }
 
 .main-footer a {
-	text-decoration: none;
-	color: var(--ligher-cyan);
-	line-height: 2.5rem;
+  text-decoration: none;
+  color: var(--ligher-cyan);
+  line-height: 2.5rem;
 }
 
 .main-footer address {
-	display: flex;
-	gap: 2.8rem;
-	margin-top: 8.8rem;
-	justify-content: center;
+  display: flex;
+  gap: 2.8rem;
+  margin-top: 8.8rem;
+  justify-content: center;
 }
