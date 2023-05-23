@@ -201,6 +201,8 @@ h4 {
   .main-header h1 {
     width: 100%;
     top: 19.5rem;
+		font-size: 5.6rem;
+		line-height: 6.9rem;
   }
 
   .arrow-icon {
