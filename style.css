@@ -389,6 +389,12 @@ h4 {
   grid-template-columns: 1fr 1fr;
 }
 
+@media only screen and (min-width: 768px) {
+  .projects {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
 /* Footer */
 
 .main-footer {
@@ -406,7 +412,8 @@ h4 {
   display: flex;
   gap: 5.7rem;
   justify-content: space-evenly;
-  margin-top: 4rem;
+  margin: 4rem auto 0;
+  max-width: 30rem;
 }
 
 .main-footer a {
