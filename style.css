@@ -163,11 +163,11 @@ h4 {
 @media only screen and (min-width: 768px) {
   .main-header {
     height: 80rem;
-    width: 100%;
     background-image: url("./images/desktop/image-header.jpg");
   }
 
   .main-header__wrapper {
+    width: 100%;
     padding: 3.4rem 4rem;
   }
 
